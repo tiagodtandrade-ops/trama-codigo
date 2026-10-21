@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alecrim &amp; Seda — Salão de beleza em Monte Aurora (exemplo)</title>
+  <meta name="description" content="Exemplo do pacote Essencial da Trama Código: site de um salão de beleza fictício, com serviços, preços, horário e contato.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F4F6F1">
+  <link rel="icon" href="../assets/img/marca.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/cormorant-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="estilo.css">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Alecrim &amp; Seda — exemplo do pacote Essencial">
+  <meta property="og:description" content="Projeto demonstrativo da Trama Código: salão de beleza fictício.">
+  <meta property="og:image" content="https://tiagodtandrade-ops.github.io/trama-codigo/salao/img/og.png">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <aside class="faixa-demo" aria-label="Aviso de demonstração">
+    <div class="envoltorio">
+      <span>Projeto demonstrativo · negócio fictício</span>
+      <a href="../">← Trama Código</a>
+    </div>
+  </aside>
+
+  <header class="topo">
+    <div class="envoltorio">
+      <a class="marca" href="#inicio">
+        <svg viewBox="0 0 30 30" aria-hidden="true"><path d="M15 28C15 18 12 10 6 3M15 28c0-10 3-18 9-25M15 28V6" fill="none" stroke="#4E6B57" stroke-width="2" stroke-linecap="round"/><g fill="#6E8F73"><ellipse cx="8" cy="8" rx="2" ry="4.5" transform="rotate(-35 8 8)"/><ellipse cx="11" cy="15" rx="2" ry="4.5" transform="rotate(30 11 15)"/><ellipse cx="22" cy="8" rx="2" ry="4.5" transform="rotate(35 22 8)"/><ellipse cx="19" cy="15" rx="2" ry="4.5" transform="rotate(-30 19 15)"/><ellipse cx="15" cy="10" rx="2" ry="4.5"/></g></svg>
+        Alecrim &amp; Seda
+      </a>
+      <nav aria-label="Seções">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços e preços</a></li>
+          <li><a href="#contato">Horário e contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Seção 1 de 3 -->
+    <section id="inicio" class="inicio" aria-labelledby="t-inicio">
+      <div class="envoltorio">
+        <div>
+          <h1 id="t-inicio">Alecrim &amp; Seda</h1>
+          <p class="sub">Salão de beleza no Jardim Primavera. Corte, cor, escova e unhas, com hora marcada e um cafezinho enquanto você espera.</p>
+          <div class="acoes">
+            <a class="botao" href="https://wa.me/5500900000000" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+            <a class="botao botao--claro" href="#servicos">Ver serviços e preços</a>
+          </div>
+        </div>
+        <div class="arte">
+          <img src="img/destaque.svg" alt="Ilustração de um espelho em arco, tesoura, pente e um vaso de alecrim" width="1200" height="800">
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2 de 3 -->
+    <section id="servicos" class="servicos" aria-labelledby="t-servicos">
+      <div class="envoltorio">
+        <h2 id="t-servicos">Serviços e preços</h2>
+        <div class="grupos">
+          <div class="grupo">
+            <h3>Cabelo</h3>
+            <dl>
+              <div class="item"><dt>Corte feminino</dt><dd>R$ 70</dd></div>
+              <div class="item"><dt>Corte masculino</dt><dd>R$ 45</dd></div>
+              <div class="item"><dt>Escova</dt><dd>R$ 50</dd></div>
+              <div class="item"><dt>Hidratação</dt><dd>R$ 80</dd></div>
+              <div class="item"><dt>Coloração</dt><dd>a partir de R$ 140</dd></div>
+            </dl>
+          </div>
+          <div class="grupo">
+            <h3>Unhas</h3>
+            <dl>
+              <div class="item"><dt>Manicure</dt><dd>R$ 35</dd></div>
+              <div class="item"><dt>Pedicure</dt><dd>R$ 40</dd></div>
+              <div class="item"><dt>Mão e pé</dt><dd>R$ 65</dd></div>
+              <div class="item"><dt>Esmaltação em gel</dt><dd>R$ 90</dd></div>
+            </dl>
+          </div>
+          <div class="grupo">
+            <h3>Sobrancelha</h3>
+            <dl>
+              <div class="item"><dt>Design</dt><dd>R$ 35</dd></div>
+              <div class="item"><dt>Design com henna</dt><dd>R$ 50</dd></div>
+            </dl>
+          </div>
+        </div>
+        <p class="obs">Valores fictícios, apenas para demonstração. Atendimento com hora marcada.</p>
+      </div>
+    </section>
+
+    <!-- Seção 3 de 3 -->
+    <section id="contato" class="contato" aria-labelledby="t-contato">
+      <div class="envoltorio">
+        <div>
+          <h2 id="t-contato">Horário e contato</h2>
+          <table class="horarios">
+            <caption class="obs legenda">Fechado aos domingos e feriados.</caption>
+            <tbody>
+              <tr><th scope="row">Terça a sexta</th><td>9h às 19h</td></tr>
+              <tr><th scope="row">Sábado</th><td>8h às 17h</td></tr>
+              <tr><th scope="row">Segunda</th><td>Fechado</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <ul class="canais">
+            <li><a href="https://wa.me/5500900000000" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg><span>WhatsApp: (00) 90000-0000</span></a></li>
+            <li><a href="tel:+5500900000000"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1l-2.2 2.23Z"/></svg><span>Telefone:&nbsp;(00)&nbsp;90000&#8209;0000</span></a></li>
+            <li><a href="mailto:contato@alecrimeseda.exemplo.invalid"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7.2L4.4 7H4v.6l8 5.5 8-5.5V7h-.4L12 12.2Z"/></svg><span>contato@alecrimeseda.exemplo.invalid</span></a></li>
+          </ul>
+          <address>
+            <strong>Endereço</strong><br>
+            Rua das Hortênsias, 120 — Jardim Primavera<br>
+            Monte Aurora (cidade fictícia)
+          </address>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="envoltorio">
+      <p class="demo">Projeto demonstrativo — Trama Código — pacote Essencial</p>
+      <p><small>Alecrim &amp; Seda é um negócio fictício. Nome, endereço, telefone e preços foram inventados.</small></p>
+      <a href="../#pacotes">Conheça os pacotes da Trama Código</a>
+    </div>
+  </footer>
+</body>
+</html>

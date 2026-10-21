@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" role="img" aria-label="Trama Código">
+  <rect x="1" y="1" width="38" height="38" rx="10" fill="#1F2A44"/>
+  <path d="M10 13h20M10 20h20M10 27h20" stroke="#F6F1E7" stroke-width="2.4" stroke-linecap="round" opacity=".9"/>
+  <path d="M13 8c0 6 6 6 6 12s-6 6-6 12" fill="none" stroke="#B04A33" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M27 8c0 6-6 6-6 12s6 6 6 12" fill="none" stroke="#D9CDB8" stroke-width="3.2" stroke-linecap="round"/>
+</svg>

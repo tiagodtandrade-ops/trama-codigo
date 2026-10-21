@@ -1,0 +1,34 @@
+{
+  "doceria": {
+    "destaque": "Bolo decorado inteiro sobre a mesa",
+    "galeria": [
+      "Vitrine com tortas de frutas e bolos de chocolate",
+      "Brigadeiros enfileirados em forminhas",
+      "Fatia de bolo de chocolate no prato",
+      "Cupcakes com cobertura de creme",
+      "Torta de frutas vermelhas",
+      "Bolo de morango com chantili",
+      "Xícara de café ao lado de um doce",
+      "Macarons coloridos",
+      "Docinhos de festa em forminhas",
+      "Cookies empilhados",
+      "Bolo de andares decorado"
+    ]
+  },
+  "oficina": {
+    "destaque": "Carros em manutenção dentro da oficina",
+    "galeria": [
+      "Carro suspenso no elevador da oficina",
+      "Ferramentas organizadas no painel da parede",
+      "Motor de carro com o capô aberto",
+      "Disco de freio e pinça",
+      "Roda e pneu prontos para montagem",
+      "Jogo de chaves e soquetes",
+      "Compartimento do motor com o capô aberto",
+      "Amortecedor e mola de suspensão",
+      "Caixa com chaves e ferramentas",
+      "Bancada de trabalho com ferramentas",
+      "Roda de carro em close"
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+/* Alecrim & Seda — exemplo do pacote Essencial (negócio fictício) */
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("fonts/cormorant-600.woff2") format("woff2");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+:root {
+  --fundo: #F4F6F1;
+  --tinta: #24302A;
+  --tinta-suave: #4C5A52;
+  --salvia: #4E6B57;
+  --salvia-escura: #3C5444;
+  --lavanda: #ECE7F4;
+  --lavanda-escura: #5B4A7E;
+  --linha: #D5DCCF;
+  --titulo: "Cormorant Garamond", Georgia, serif;
+  --texto: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--fundo); color: var(--tinta); font-family: var(--texto); font-size: 1.0625rem; line-height: 1.6; }
+img { max-width: 100%; height: auto; display: block; }
+h1, h2, h3 { font-family: var(--titulo); font-weight: 600; line-height: 1.1; margin: 0 0 .5em; }
+h1 { font-size: clamp(2.6rem, 9vw, 4.4rem); }
+h2 { font-size: clamp(2rem, 6vw, 2.8rem); }
+h3 { font-size: 1.6rem; }
+p { margin: 0 0 1em; }
+a { color: var(--salvia-escura); }
+:focus-visible { outline: 3px solid var(--lavanda-escura); outline-offset: 3px; border-radius: 4px; }
+.pular { position: absolute; left: 1rem; top: -4rem; background: var(--tinta); color: #fff; padding: .75rem 1rem; border-radius: 8px; z-index: 100; }
+.pular:focus { top: 1rem; }
+.envoltorio { width: min(100% - 2rem, 64rem); margin-inline: auto; }
+
+/* Faixa de demonstração (não conta como seção) */
+.faixa-demo { background: var(--tinta); color: #fff; font-size: .9rem; }
+.faixa-demo .envoltorio { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .25rem 1rem; padding: .35rem 0; }
+.faixa-demo a { color: #fff; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+
+/* Cabeçalho */
+.topo { position: sticky; top: 0; z-index: 40; background: rgba(244, 246, 241, .95); border-bottom: 1px solid var(--linha); }
+.topo .envoltorio { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 1rem; }
+.marca { font-family: var(--titulo); font-size: 1.7rem; color: var(--tinta); text-decoration: none; display: inline-flex; align-items: center; gap: .5rem; min-height: 56px; }
+.marca svg { width: 30px; height: 30px; }
+.topo nav ul { display: flex; gap: .25rem; list-style: none; margin: 0; padding: 0 0 .25rem; flex-wrap: wrap; }
+.topo nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 .7rem; color: var(--tinta); text-decoration: none; border-radius: 999px; white-space: nowrap; }
+.topo nav a:hover { background: var(--lavanda); }
+
+/* Botões */
+.botao { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 48px; padding: .7rem 1.4rem; border-radius: 999px; background: var(--salvia); color: #fff; border: 2px solid var(--salvia); font-weight: 600; text-decoration: none; }
+.botao:hover { background: var(--salvia-escura); border-color: var(--salvia-escura); color: #fff; }
+.botao--claro { background: transparent; color: var(--tinta); border-color: var(--tinta); }
+.botao--claro:hover { background: var(--tinta); color: #fff; border-color: var(--tinta); }
+
+section { padding: 3.5rem 0; scroll-margin-top: 4rem; }
+
+/* 1. Início */
+.inicio { padding-top: 2rem; }
+.inicio .envoltorio { display: grid; gap: 2rem; align-items: center; }
+.inicio .sub { font-size: 1.2rem; color: var(--tinta-suave); max-width: 30rem; }
+.inicio .acoes { display: flex; flex-wrap: wrap; gap: .75rem; }
+.inicio .arte { border-radius: 200px 200px 24px 24px; overflow: hidden; border: 6px solid #fff; box-shadow: 0 10px 30px rgba(36, 48, 42, .12); }
+@media (min-width: 48rem) { .inicio .envoltorio { grid-template-columns: 1fr 1fr; } .inicio { padding-top: 4rem; } }
+
+/* 2. Serviços */
+.servicos { background: var(--lavanda); }
+.grupos { display: grid; gap: 1.5rem; margin-top: 1.5rem; }
+@media (min-width: 48rem) { .grupos { grid-template-columns: repeat(3, 1fr); } }
+.grupo { background: #fff; border-radius: 20px; padding: 1.5rem; }
+.grupo h3 { color: var(--lavanda-escura); }
+.grupo dl { margin: 0; }
+.grupo .item { display: flex; justify-content: space-between; gap: 1rem; padding: .6rem 0; border-bottom: 1px dashed var(--linha); }
+.grupo .item:last-child { border-bottom: 0; }
+.grupo dt { font-weight: 500; }
+.grupo dd { margin: 0; font-weight: 700; white-space: nowrap; }
+.obs { margin-top: 1.25rem; color: var(--tinta-suave); font-size: .95rem; }
+
+/* 3. Horário e contato */
+.contato .envoltorio { display: grid; gap: 2rem; }
+@media (min-width: 48rem) { .contato .envoltorio { grid-template-columns: 1fr 1fr; } }
+.horarios { width: 100%; border-collapse: collapse; background: #fff; border-radius: 16px; overflow: hidden; }
+.horarios th, .horarios td { text-align: left; padding: .7rem 1rem; border-bottom: 1px solid var(--linha); }
+.horarios tr:last-child th, .horarios tr:last-child td { border-bottom: 0; }
+.canais { list-style: none; padding: 0; margin: 0 0 1.5rem; display: grid; gap: .6rem; }
+.canais a { display: flex; align-items: center; gap: .75rem; min-height: 52px; padding: .5rem 1rem; background: #fff; border: 1px solid var(--linha); border-radius: 14px; color: var(--tinta); text-decoration: none; overflow-wrap: anywhere; }
+.canais a:hover { border-color: var(--salvia); }
+.canais svg { width: 24px; height: 24px; flex: none; color: var(--salvia); }
+address { font-style: normal; }
+
+/* Rodapé de demonstração */
+.rodape { background: var(--tinta); color: #fff; padding: 2rem 0; text-align: center; }
+.rodape p { margin: 0 0 .35rem; }
+.rodape .demo { font-weight: 700; }
+.rodape a { color: #fff; display: inline-flex; align-items: center; min-height: 44px; }
+.rodape small { color: #C9D2CC; }
+.legenda { caption-side: bottom; text-align: left; }
+.topo nav { max-width: 100%; }
+@media (max-width: 47.99rem) { .topo { position: static; } }
