@@ -4,6 +4,7 @@ Site da Trama Código, com três exemplos demonstrativos, um por pacote. HTML e 
 
 - **Endereço previsto:** https://tiagodtandrade-ops.github.io/trama-codigo/ (o GitHub Pages só é ativado depois da aprovação do QA)
 - **Missão:** TC-DEV-001
+- **Situação:** pausado em 21/10/2026 (IAU-DIR-006 / TRA-DIR-005). Versão 1 com fotos provisórias, aguardando QA. Na retomada, o primeiro passo é trocar as fotos (ver "Trocar fotos" e TRA-RET-502).
 
 ## Estrutura
 
